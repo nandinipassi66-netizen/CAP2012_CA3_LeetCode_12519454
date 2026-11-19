@@ -1,12 +1,11 @@
 class MyCircularQueue {
-private:
+public:
     vector<int> arr;
     int front;
     int rear;
     int size;
     int capacity;
 
-public:
     MyCircularQueue(int k) {
         capacity = k;
         arr.resize(k);
@@ -63,3 +62,4 @@ public:
         return size == capacity;
     }
 };
+    
