@@ -1,5 +1,5 @@
 class MyQueue {
-private:
+public:
     stack<int> inputStack;
     stack<int> outputStack;
 
@@ -12,7 +12,6 @@ private:
         }
     }
 
-public:
     MyQueue() {
     }
 
@@ -31,7 +30,6 @@ public:
 
     int peek() {
         transfer();
-
         return outputStack.top();
     }
 
